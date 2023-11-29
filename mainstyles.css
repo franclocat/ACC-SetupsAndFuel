@@ -2,12 +2,26 @@
     font-family: 'Azonix';
     src: url('file:///C:/Juegos%20e%20instaladores/Projects%20IntelliJ/ACC-SetupsAndFuel/fonts/azonix/Azonix.otf') format('opentype');
     /* Add more src declarations for different font weights or styles if available */
-  }
+}
 
 body {
     background-color: rgb(95, 95, 95);
     margin: 0;
   }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
 
 #buttonContainer {
     display: grid;
@@ -18,10 +32,10 @@ body {
 }
 
 .logonav {
-    display: flex;
     position: absolute;
+    display: flex;
     width: 100vw;
-    height: 50vh;
+    height: 20vh;
     align-items: center;
     justify-content: center;
 }
@@ -36,14 +50,30 @@ body {
 }
   
 button {
-    width: 20vw;
-    min-width: 150px;
+    width: 40vw;
+    min-width: 300px;
     height: 10vw;
-    min-height: 50px;
+    min-height: 150px;
     background-color: #dc143c;
     border-radius: 15px;
     font-size: larger;
     color: white;
     font-family: 'Azonix', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .logonav {
+    position: relative;
   }
-  
+  #buttonContainer {
+    display: block;
+    text-align: center;
+    height: 100vh;
+  }
+  button {
+    margin-top: 25px;
+    width: 80vw;
+    min-width: 200px;
+    height: 100px;
+  }
+}
