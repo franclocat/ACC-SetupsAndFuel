@@ -4,15 +4,16 @@ body {
 }
 
 #title {
-    height: 20vh;
+    height: 16vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Azonix', sans-serif;
-    font-size: xx-large;
+    font-size: x-large;
     text-align: center;
     text-decoration: underline;
+    margin-bottom: 15px;
 }
 
 .rows {
@@ -53,8 +54,8 @@ body {
     background-color: rgb(50, 50, 50);
     height: 35px;
     min-height: 35px;
-    width: 10vw;
-    min-width: 75px;
+    width: 12.5vw;
+    min-width: 125px;
 }
 
 #res {
@@ -64,4 +65,5 @@ body {
     font-size: xx-large;
     font-weight: bold;
     color: white;
+    font-family: 'Azonix', sans-serif;
 }

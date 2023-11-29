@@ -6,25 +6,26 @@
     <title>ACC Fuel Calculator</title>
     <link href="mainstyles.css" rel="stylesheet">
     <link href="calcstyles.css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="title">FUEL CALCULATOR</div>
+    <div id="title"><h1>FUEL CALCULATOR</h1></div>
     <div class="rows">
-        <div class="subtitle">Race Length in minutes</div>
-        <input class="onelineinput" type="number" placeholder="10" min="1">
+        <div class="subtitle"><h2>Race Length in minutes</h2></div>
+        <input class="onelineinput" id="raceLength" type="number" placeholder="10" min="1" oninput="calculateFuel()">
     </div>
     <div class="rows">
-        <div class="subtitle">Lap time</div>
+        <div class="subtitle"><h2>Lap time</h2></div>
         <div>
-            <input class="time" type="number" placeholder="0" min="0">
-            <input class="time" type="number" placeholder="00" min="0">
-            <input class="time" type="number" placeholder="000" min="0">
+            <input class="time" name="minutes" id="minutes" type="number" placeholder="0" min="0" oninput="calculateFuel()">
+            <input class="time" name="seconds" id="seconds" type="number" placeholder="00" min="0" oninput="calculateFuel()">
+            <!--<input class="time" name="milliseconds" id="milliseconds" type="number" placeholder="000" min="0">-->
         </div>
     </div>
     <div class="rows">
-        <div class="subtitle">Fuel/Lap</div>
-        <input class="onelineinput" type="text" placeholder="0.00" min="1">
+        <div class="subtitle"><h2>Fuel/Lap</h2></div>
+        <input class="onelineinput" id="fuelPerLap" type="text" placeholder="0.00" min="1" oninput="calculateFuel()">
     </div>
-    <div id="res">RESULT</div>
+    <div id="res"><h3>RESULT</h3></div>
 </body>
 </html>
