@@ -11,9 +11,11 @@ body {
     justify-content: center;
     font-family: 'Azonix', sans-serif;
     font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
 }
 
-.rt {
+.rows {
     text-align: center;
     display: grid;
     grid-template-rows: 20px 1fr;
@@ -22,16 +24,44 @@ body {
     align-items: center;
 }
 
-#rtminutes {
+.subtitle {
+    font-family: 'Azonix', sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.onelineinput {
+    text-align: center;
+    justify-self: center;
+    font-size: large;
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: #dc143c;
+    background-color: rgb(50, 50, 50);
+    height: 35px;
+    min-height: 35px;
+    width: 25vw;
+    min-width: 250px;
+}
+
+.time {
     text-align: center;
     font-size: large;
     background-color: transparent;
     border-radius: 15px;
-    height: 40px;
+    border-color: #dc143c;
+    background-color: rgb(50, 50, 50);
+    height: 35px;
+    min-height: 35px;
+    width: 10vw;
+    min-width: 75px;
 }
 
-#racelength {
-    font-family: 'Azonix', sans-serif;
-    font-size: large;
+#res {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
     color: white;
 }

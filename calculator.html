@@ -9,12 +9,22 @@
 </head>
 <body>
     <div id="title">FUEL CALCULATOR</div>
-    <div class="rt">
-        <div id="racelength">Race Length in minutes</div>
-        <input id="rtminutes" type="number" placeholder="10" min="1">
+    <div class="rows">
+        <div class="subtitle">Race Length in minutes</div>
+        <input class="onelineinput" type="number" placeholder="10" min="1">
     </div>
-    <div class="lt">LT</div>
-    <div class="fl">F/L</div>
-    <div class="res">RESULT</div>
+    <div class="rows">
+        <div class="subtitle">Lap time</div>
+        <div>
+            <input class="time" type="number" placeholder="0" min="0">
+            <input class="time" type="number" placeholder="00" min="0">
+            <input class="time" type="number" placeholder="000" min="0">
+        </div>
+    </div>
+    <div class="rows">
+        <div class="subtitle">Fuel/Lap</div>
+        <input class="onelineinput" type="text" placeholder="0.00" min="1">
+    </div>
+    <div id="res">RESULT</div>
 </body>
 </html>
