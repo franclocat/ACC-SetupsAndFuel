@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Azonix';
-    src: url('file:///C:/Juegos%20e%20instaladores/Projects%20IntelliJ/ACC-SetupsAndFuel/fonts/azonix/Azonix.otf') format('opentype');
+    src: url('fonts\azonix\Azonix.otf') format('opentype');
     /* Add more src declarations for different font weights or styles if available */
 }
 
@@ -12,13 +12,19 @@ body {
 }
 
 #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     color: white;
     font-family: 'Azonix', sans-serif;
     font-size: xx-large;
     text-align: center;
+    height: 15vh;
 }
 
 #tracks {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -29,14 +35,15 @@ body {
 
 button {
     font-family: 'Azonix', sans-serif;
-    width: 20vw;
-    min-width: 200px;
+    width: 25vw;
+    min-width: 175px;
     height: 100px;
     border-radius: 15px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Azonix', sans-serif;
-    font-size: medium;
+    font-size: large;
+    font-weight: bold;
     margin-block: 10px;
     margin-inline: 5px;
-    background-color: #dc143c;
+    border-color: #dc143c;
 }

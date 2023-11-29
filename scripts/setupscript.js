@@ -13,14 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
       'Monza',
       'Circuit de Nevers Magny-Cours',
       'Circuit Zolder',
-      'Circuit de Spa-Francorchamps 24H',
       'Suzuka Circuit',
-      'Circuit de Barcelona-Catalunya 2019',
       'Laguna Seca',
       'Kyalami Grand Prix Circuit',
-      'Mount Panorama Circuit',
-      'Suzuka Circuit East Course',
-      'Suzuka Circuit West Course'
+      'Mount Panorama Circuit'
     ];
   
     const tracksContainer = document.getElementById('tracks');
@@ -32,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       button.innerText = track; // Display the track name on the button
       tracksContainer.appendChild(button); // Append button to the 'tracks' div
   
-      // Set background image for each button (assuming images are named accordingly)
+      // Set background image for each button (images are named accordingly)
       button.style.backgroundImage = `url('imgs/${track}.jpg')`;
       button.style.backgroundSize = 'cover'; // Adjust background size to cover the button
       button.style.backgroundPosition = 'center'; // Center the background image
