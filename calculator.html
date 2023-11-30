@@ -6,10 +6,16 @@
     <title>ACC Fuel Calculator</title>
     <link href="styles/mainstyles.css" rel="stylesheet">
     <link href="styles/calcstyles.css" rel="stylesheet">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/calcscript.js"></script>
 </head>
 <body>
     <div id="title"><h1>FUEL CALCULATOR</h1></div>
+    <div class="timeOrLaps">
+        <input type="checkbox"id="time" name="time" value="time">
+        <label for="time" title="time">Time</label>
+        <input type="checkbox" id="laps" name="laps" value="laps">
+        <label for="laps" title="laps">Laps</label>
+    </div>
     <div class="rows">
         <div class="subtitle"><h2>Race Length in minutes</h2></div>
         <input class="onelineinput" id="raceLength" type="number" placeholder="10" min="1" oninput="calculateFuel()">
@@ -27,5 +33,6 @@
         <input class="onelineinput" id="fuelPerLap" type="text" placeholder="0.00" min="1" oninput="calculateFuel()">
     </div>
     <div id="res"><h3>RESULT</h3></div>
+
 </body>
 </html>

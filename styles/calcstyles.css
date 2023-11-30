@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh 50px 1fr 1fr 1fr 1fr 1fr;
 }
 
 #title {
@@ -68,6 +68,10 @@ body {
     font-family: 'Azonix', sans-serif;
 }
 
-input {
+.timeOrLaps {
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Azonix', sans-serif;
 }
