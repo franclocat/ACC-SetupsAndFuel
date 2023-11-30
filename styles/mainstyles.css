@@ -67,6 +67,13 @@ button {
   .logonav {
     position: relative;
   }
+  #logo {
+    justify-self: center;
+    width: 50vw;
+    max-width: 275px;
+    height:auto;
+    max-height: 20vh;
+}
   #buttonContainer {
     display: block;
     text-align: center;
