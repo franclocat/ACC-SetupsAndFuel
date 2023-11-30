@@ -7,6 +7,7 @@
 body {
     background-color: rgb(95, 95, 95);
     margin: 0;
+    overflow-y: hidden;
   }
 
 a {
@@ -26,7 +27,7 @@ a:active {
 #buttonContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    height: 80vh;
     justify-items: center; /* Horizontally centers items within the grid */
     align-items: center; /* Vertically centers items within the grid */
 }
@@ -46,7 +47,8 @@ a:active {
     width: 50vw;
     min-width: 200px;
     max-width: 300px;
-    height: fit-content;
+    height:fit-content;
+    max-height: 20vh;
 }
   
 button {
