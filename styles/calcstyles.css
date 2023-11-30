@@ -81,3 +81,7 @@ body {
 .typeOfLength {
     border-color: #dc143c;
 }
+
+input {
+    color: white;
+}
